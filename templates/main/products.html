@@ -1,0 +1,182 @@
+{% load staticfiles %}
+    <section class="products products-style">
+        <h2 class="products__title products__title-style">Продукция</h2>
+
+        <input type="radio" value="nav_1" id="nav_1" name="products__nav" class="products__nav products__nav-style" checked>
+        <label for="nav_1" class="products__navBtn products__navBtn-style">Станд. фасад</label>
+        <input type="radio" value="nav_2" id="nav_2" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_2" class="products__navBtn products__navBtn-style">Мокрый фасад</label>
+        <input type="radio" value="nav_3" id="nav_3" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_3" class="products__navBtn products__navBtn-style">Вент. фасад</label>
+        <input type="radio" value="nav_4" id="nav_4" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_4" class="products__navBtn products__navBtn-style">Экран</label>
+        <input type="radio" value="nav_5" id="nav_5" name="products__nav" class="products__nav products__nav-style">
+        <label for="nav_5" class="products__navBtn products__navBtn-style">Панель</label>
+
+        <div class="products__block" id="block_1">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для стандартного фасада
+                </h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_2">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для мокрого фасада</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_3">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Корзина для вентилируемого
+                    фасада</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_4">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Экран для кондиционера</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__block" id="block_5">
+            <div class="products__description products__description-style products__description-left">
+                <h3 class="products__descriptionTitle products__descriptionTitle-style">Декоративная панель</h3>
+                <p class="products__descriptionText products__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black products__order products__order-style">Заказать</a>
+                <a href="" class="products__info products__info-style">Подробнее</a>
+            </div>
+            <div class="products__photos products__photos-style">
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                </div>
+                <div class="products__photosColumn">
+                    <div class="products__photo products__photo-left">
+                        <img loading="lazy" src="{% static "img/2.jpg" %}" alt="">
+                    </div>
+                    <div class="products__photo products__photo-right">
+                        <img loading="lazy" src="{% static "img/1.jpg" %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="products__icons">
+            <img loading="lazy" src="{% static "img/icons/checkmark.png" %}" alt="" class="products__icon">
+            <p class="products__numbers"><b>Надежность</b><br>корзин произведено</p>
+
+            <img loading="lazy" src="{% static "img/icons/checkmark.png" %}" alt="" class="products__icon">
+            <p class="products__numbers"><b>Легкий монтаж</b><br>корзин произведено</p>
+
+            <img loading="lazy" src="{% static "img/icons/checkmark.png" %}" alt="" class="products__icon">
+            <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
+
+            <img loading="lazy" src="{% static "img/icons/checkmark.png" %}" alt="" class="products__icon">
+            <p class="products__numbers"><b>12000</b><br>корзин произведено</p>
+        </div>
+    </section>    

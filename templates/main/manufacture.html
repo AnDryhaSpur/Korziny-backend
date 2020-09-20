@@ -1,0 +1,147 @@
+{% load staticfiles %}
+    <section class="manufacture manufacture-style">
+        <h2 class="manufacture__title manufacture__title-style">Производство</h2>
+
+        <div class="manufacture__video manufacture__video-style">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/yIw6jjNVyoU?color=white" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <input type="radio" value="manNav_1" id="manNav_1" name="manufacture__nav"
+            class="manufacture__nav manufacture__nav-style" checked>
+        <label for="manNav_1" class="manufacture__navBtn manufacture__navBtn-style">Участок резки</label>
+        <input type="radio" value="manNav_2" id="manNav_2" name="manufacture__nav"
+            class="manufacture__nav manufacture__nav-style">
+        <label for="manNav_2" class="manufacture__navBtn manufacture__navBtn-style">Участок гибки</label>
+        <input type="radio" value="manNav_3" id="manNav_3" name="manufacture__nav"
+            class="manufacture__nav manufacture__nav-style">
+        <label for="manNav_3" class="manufacture__navBtn manufacture__navBtn-style">Участок покраски</label>
+        <input type="radio" value="manNav_4" id="manNav_4" name="manufacture__nav"
+            class="manufacture__nav manufacture__nav-style">
+        <label for="manNav_4" class="manufacture__navBtn manufacture__navBtn-style">Участок упаковки</label>
+
+        <div class="manufacture__block" id="manBlock_1">
+            <div class="manufacture__description manufacture__description-style manufacture__description-left">
+                <h3 class="manufacture__descriptionTitle manufacture__descriptionTitle-style">Участок резки</h3>
+                <p class="manufacture__descriptionText manufacture__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black manufacture__order manufacture__order-style">Заказать</a>
+            </div>
+            <div class="manufacture__photos manufacture__photos-style">
+                <div class="swiper-container manu-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/prep-1.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/prep-2.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/cut-1.png" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-yellow"></div>
+                    <div class="swiper-button-prev swiper-button-yellow"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manufacture__block" id="manBlock_2">
+            <div class="manufacture__description manufacture__description-style manufacture__description-left">
+                <h3 class="manufacture__descriptionTitle manufacture__descriptionTitle-style">Участок гибки</h3>
+                <p class="manufacture__descriptionText manufacture__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black manufacture__order manufacture__order-style">Заказать</a>
+            </div>
+            <div class="manufacture__photos manufacture__photos-style">
+                <div class="swiper-container manu-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/bend-1.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>                        
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/bend-2.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>                        
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/bend-3.png" %}" alt="" class="swiper-slide-image-cover">
+                        </div>                        
+                    </div>
+                    <div class="swiper-button-next swiper-button-yellow"></div>
+                    <div class="swiper-button-prev swiper-button-yellow"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manufacture__block" id="manBlock_3">
+            <div class="manufacture__description manufacture__description-style manufacture__description-left">
+                <h3 class="manufacture__descriptionTitle manufacture__descriptionTitle-style">Участок покраски</h3>
+                <p class="manufacture__descriptionText manufacture__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black manufacture__order manufacture__order-style">Заказать</a>
+            </div>
+            <div class="manufacture__photos manufacture__photos-style">
+                <div class="swiper-container manu-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/paint-1.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/paint-2.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/paint-3.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-yellow"></div>
+                    <div class="swiper-button-prev swiper-button-yellow"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manufacture__block" id="manBlock_4">
+            <div class="manufacture__description manufacture__description-style manufacture__description-left">
+                <h3 class="manufacture__descriptionTitle manufacture__descriptionTitle-style">Участок упаковки</h3>
+                <p class="manufacture__descriptionText manufacture__descriptionText-style">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam nihil ipsam hic reprehenderit
+                    blanditiis fugit, dolor eius saepe! Voluptas ipsum incidunt quis sit molestiae commodi ex, ad
+                    aliquam delectus!
+                </p>
+                <a href="" class="btn-black manufacture__order manufacture__order-style">Заказать</a>
+            </div>
+            <div class="manufacture__photos manufacture__photos-style">
+                <div class="swiper-container manu-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/pack-4.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/pack-4.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/pack-4.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>
+                        <div class="swiper-slide swiper-slide-manu">
+                            <img src="{% static "img/manu/pack-4.jpg" %}" alt="" class="swiper-slide-image-cover">
+                        </div>                      
+                    </div>
+                    <div class="swiper-button-next swiper-button-yellow"></div>
+                    <div class="swiper-button-prev swiper-button-yellow"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>

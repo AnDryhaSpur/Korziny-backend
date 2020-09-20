@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<form class="{{ block }}__form {{ block }}__form-style fetch-form" method="POST" action={% url "send" %}>
+    {% csrf_token %}
+    <h3 class="{{ block }}__formTitle {{ block }}__formTitle-style">Узнайте стоимость корзины</h3>
+    <p class="{{ block }}__formText {{ block }}__formText-style">
+        Оставьте ваши контактные данные и наш менеджер свяжется с вами
+    </p>
+    <label for="{{ block }}-input-name" class="{{ block }}__label {{ block }}__label-style">Ваше имя:</label>
+    <input id="{{ block }}-input-name" type="text" name="input-name" class="{{ block }}__input {{ block }}__input-style {{ block }}__input-name" placeholder="Иван Иванович" required pattern="[А-Яа-яЁё ]+">
+    <label for="{{ block }}-input-tel" class="{{ block }}__label {{ block }}__label-style">Ваш телефон:</label>
+    <input id="{{ block }}-input-tel" type="tel" name="input-tel" class="{{ block }}__input {{ block }}__input-style {{ block }}__input-tel" placeholder="+79999999999" required pattern="[0-9]{11}" maxlength="12">
+    <p class="{{ block }}__formText {{ block }}__formText-style2">
+        Нажимая "Оставить заявку" вы даете согласие на обработку ваших <a href="" class="{{ block }}__personal">персональных данных</a>
+    </p>
+    <input type="submit" value="Оставить заявку" class="btn-black {{ block }}__input {{ block }}__input-style {{ block }}__input-submit">
+</form>

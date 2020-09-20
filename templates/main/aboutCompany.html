@@ -1,0 +1,46 @@
+{% load staticfiles %}
+    <section class="aboutCompany aboutCompany-style">
+        <h2 class="aboutCompany__title aboutCompany__title-style">Компания "АЛЬТЕКА" это:</h2>
+        <div class="aboutCompany__numbers aboutCompany__numbers-style">
+            <img loading="lazy" src="{% static "img/icons/calendar.png" %}" alt="" class="aboutCompany__icon aboutCompany__icon-style">
+            <span class="aboutCompany__number aboutCompany__number-style">7</span>
+            <span class="aboutCompany__merit aboutCompany__merit-style">лет успешной работы</span>
+            <img loading="lazy" src="{% static "img/icons/complete.png" %}" alt="" class="aboutCompany__icon aboutCompany__icon-style">
+            <span class="aboutCompany__number aboutCompany__number-style">208</span>
+            <span class="aboutCompany__merit aboutCompany__merit-style">реализованных проектов</span>
+            <img loading="lazy" src="{% static "img/icons/handshake.png" %}" alt="" class="aboutCompany__icon aboutCompany__icon-style">
+            <span class="aboutCompany__number aboutCompany__number-style">130</span>
+            <span class="aboutCompany__merit aboutCompany__merit-style">компаний партнеров</span>
+        </div>
+        <p class="aboutCompany__text aboutCompany__text-style">
+            Наша продукция - это высококачественные фасадные корзины для внешних блоков климатического оборудования. Они
+            сохраняют и дополняют дизайн здания, что увеличивает его привлекательность для клиентов.
+        </p>
+        <div class="aboutCompany__manufacturers aboutCompany__manufacturers-style">
+            <h4>
+                Продукция совместима с оборудованием всех ведущих производителей
+            </h4>
+            <img loading="lazy" src="{% static "img/manufacturers.png" %}" alt="" class="aboutCompany__logos aboutCompany__logos-style">
+        </div>
+        
+        <div class="aboutCompany__documents aboutCompany__documents-style">
+            <h4 class="aboutCompany__documentsTitle">
+                Документация
+            </h4>
+
+            <a href="javascript:;" class="aboutCompany__document aboutCompany__document-style" data-micromodal-trigger="modal-1">
+                <img src="{% static "img/sertificate.jpg" %}" alt="" class="aboutCompany__documentImage">
+                <span class="aboutCompany__documentText">Сертификат соответствия ТУ</span>                
+            </a>
+
+            <a href="{% static "docs/Pasport.pdf" %}" class="aboutCompany__document aboutCompany__document-style" target="blank">
+                <img src="{% static "img/Pasport.jpg" %}" alt="" class="aboutCompany__documentImage">
+                <span class="aboutCompany__documentText">Расчёт на нагрузки</span>                
+            </a>
+
+            <a href="{% static "docs/Pasport.pdf" %}" class="aboutCompany__document aboutCompany__document-style" target="blank">
+                <img src="{% static "img/Pasport.jpg" %}" alt="" class="aboutCompany__documentImage">
+                <span class="aboutCompany__documentText">Акт испытаний</span>                
+            </a>
+        </div>
+    </section>

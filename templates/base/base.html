@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="{% static "apps/map/bundle.css" %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .mobileMenu {
+            display: none;
+        }
+        @media screen and (max-width: 900px) {
+            .mainMenu,.subMenu {
+                display: none;
+            }
+            .header {
+                position: sticky;
+                top: 0;                
+            }
+            .mobileMenu {
+                display: grid;
+            }
+        }
+    </style>
+    <title>{% block title %}Alteka Django{% endblock %} - ALTEKA</title>
+</head>
+
+<body>
+    {% include "base/header.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "base/footer.html" %}
+
+    <!--Scripts-->
+    <script src="https://kit.fontawesome.com/5510adf21a.js" crossorigin="anonymous"></script>
+    <script defer src="{% static "apps/map/bundle.js" %}"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script>
+
+    //Gallery
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 5, 
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 5,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+    var trust = new Swiper('.trust-container', {
+      slidesPerView: 3,
+      breakpoints: {
+        900: {
+            slidesPerView: 5,
+        }
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: 'true',
+        },
+    });
+    var manu = new Swiper('.manu-container', {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: 'true',
+        },
+    });
+
+    //Modal
+    MicroModal.init();
+
+    //FormFetch
+    let formClasses = ['videoBlock', 'modal'];
+
+    for (let formClass of formClasses) {
+        let f = ('.'+formClass + '__form');
+        let n = (formClass + '-input-name');
+        let t = (formClass + '-input-tel');
+
+        document.querySelector(f).addEventListener('submit', postData);
+
+        function postData(event){
+        event.preventDefault();
+
+        let id_name = document.getElementById(n).value;
+        let id_tel = document.getElementById(t).value;
+
+        let dataForm = new FormData();
+        
+        dataForm.append('name', id_name);
+        dataForm.append('tel', id_tel);
+
+        fetch('{% url "send" %}', {
+            method: 'post',
+            headers:{
+                    'X-CSRFToken':'{{csrf_token}}',
+                    'X-Requested-With':'XMLHttpRequest',
+            },
+            body: dataForm,
+        })
+        .then((result) => {
+            console.log('Success:', result);
+        })
+        }
+    }
+    </script> 
+</body>
+</html>

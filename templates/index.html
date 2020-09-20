@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+{% include "main/firstScreen.html" %}
+{% include "base/modal.html" with type="form" modal_id="modal-3" %}
+{% include "main/videoBlock.html" %}
+{% include "main/aboutCompany.html" %}
+{% include "base/modal.html" with type="image" modal_id="modal-1" image="img/sertificate.jpg" %}
+{% include "main/products.html" %}
+{% include "main/features.html" %}
+{% include "main/construction.html" %}
+{% include "base/modal.html" with type="image" modal_id="modal-2" image="img/ral.png" %}
+{% include "main/manufacture.html" %}
+{% include "main/delivery.html" %}
+{% include "main/gallery.html" %}
+{% include "main/trust.html" %}
+{% include "main/news.html" %}
+
+{% endblock %}

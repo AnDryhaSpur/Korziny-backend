@@ -1,0 +1,19 @@
+{% load staticfiles %}
+    <section class="videoBlock videoBlock-style">
+        <video src="{% static "video/background.mp4" %}" class="videoBlock__video videoBlock__video-style" autoplay muted loop></video>
+        <img src="{% static "img/backImage.jpg" %}" alt="" class="videoBlock__backImage">
+        <h2 class="videoBlock__title videoBlock__title-style">
+            Корзины для кондиционеров - необходимая часть фасада
+        </h2>
+        {% include "base/form.html" with block="videoBlock"%}
+        <ul class="videoBlock__list videoBlock__list-style">
+            <li class="videoBlock__listItem videoBlock__listItem-style">Более 70% современных зданий имеют корзины для
+                кондиционеров</li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Наличие фасадных корзин на 25% увеличивает
+                привлекательность квартир в новостройках </li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Корзины не нарушают целостность дизайна жилого
+                комплекса и обеспечивают дополнительную защиту оборудования</li>
+            <li class="videoBlock__listItem videoBlock__listItem-style">Монтаж кондиционеров с корзинами гораздо удобнее
+                из-за продуманной конструкции кронштейнов</li>
+        </ul>
+    </section>

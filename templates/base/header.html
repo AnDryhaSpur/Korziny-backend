@@ -1,0 +1,201 @@
+{% load staticfiles %}
+    <header class="header header-style">
+        <nav class="mainMenu mainMenu-style">
+            <a class="mainMenu__logoLink" href="/"><img loading="lazy" class="mainMenu__logo" src="{% static "img/logo-panel.png" %}" alt=""></a>
+            <ul class="mainMenu__elements mainMenu__elements-style">
+                <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">О компании</a></li>
+                <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Контакты</a></li>
+                <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Документация</a></li>
+                <li class="mainMenu__element mainMenu__element-style"><a class="mainMenu__link mainMenu__link-style"
+                        href="">Новости</a></li>
+                <div class="mainMenu__element mainMenu__moreWrap">
+                    <li class="mainMenu__element mainMenu__element-style mainMenu__element-more">Еще</li>
+                    <ul class="mainMenu__moreList mainMenu__moreList-style">
+                        <li class="mainMenu__element mainMenu__element-style"><a
+                                class="mainMenu__link mainMenu__link-style" href="">Новости</a></li>
+                        <li class="mainMenu__element mainMenu__element-style"><a
+                                class="mainMenu__link mainMenu__link-style" href="">Новости</a></li>
+                        <li class="mainMenu__element mainMenu__element-style"><a
+                                class="mainMenu__link mainMenu__link-style" href="">Новости</a></li>
+                        <li class="mainMenu__element mainMenu__element-style"><a
+                                class="mainMenu__link mainMenu__link-style" href="">Новости</a></li>
+                        <li class="mainMenu__element mainMenu__element-style"><a
+                                class="mainMenu__link mainMenu__link-style" href="">Новости</a></li>
+                    </ul>
+                    <i class="mainMenu__moreArrow fas fa-angle-down"></i>
+                </div>
+            </ul>
+            <a href="" class="mainMenu__search mainMenu__search-style">
+                <i class="fas fa-search mainMenu__searchIcon mainMenu__searchIcon-style"></i>
+            </a>
+            <div class="mainMenu__right mainMenu__right-style">
+                <a class="mainMenu__mail mainMenu__mail-style" href=""><i
+                        class="far fa-envelope mainMenu__mailIcon mainMenu__mailIcon-style"></i> info@alteka.su</a>
+            </div>
+        </nav>
+
+        <nav class="mobileMenu mobileMenu-style">
+            <a class="mobileMenu__logoLink" href="">
+                <img loading="lazy" class="mobileMenu__logo" src="{% static "img/logo-panel.png" %}" alt="">
+            </a>
+            <button class="btn-black btnCall-style mobileMenu__btnCall" data-micromodal-trigger="modal-3"><i class="fas fa-mobile-alt"></i>
+                <div class="btnCall__desc">Заказать звонок</div>
+            </button>
+            <button class="btn-black btnCall-style mobileMenu__btnCall"><i class="fab fa-whatsapp"></i>
+                <div class="btnCall__desc">Написать в WhatsApp</div>
+            </button>
+            <input id="mobileMenu__toggle" class="mobileMenu__toggle" type="checkbox">
+            <label for="mobileMenu__toggle" class="mobileMenu__button">
+                <span class="mobileMenu__buttonLine"></span>
+            </label>
+            <div class="mobileMenu__opening">
+                <div class="mobileMenu__workhours mobileMenu__workhours-style">
+                    <span class="mobileMenu__workhoursString mobileMenu__workhoursString-style">Телефон:</span>
+                    <a href="" class="mobileMenu__tel2 mobileMenu__tel-style">8(800)700-93-77</a>
+                    <span class="mobileMenu__workhoursString mobileMenu__workhoursString-style2">Звонок бесплатный</span>
+                    <span class="mobileMenu__workhoursString mobileMenu__workhoursString-style">Время работы:</span>
+                    <span class="mobileMenu__workhoursString mobileMenu__workhoursString-style2">По будням <b>8:00-17:00</b> по московскому времени</span>
+                </div>                
+                <ul class="mobileMenu__elements mobileMenu__elements-style">
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">О компании</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Контакты</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Документация</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Новости</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="/products">Продукция</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Конструкция</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Производство</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Доставка</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Монтаж</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Галерея</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Производство</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Доставка</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Монтаж</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Галерея</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Производство</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Доставка</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Монтаж</a></li>
+                    <li class="mobileMenu__element mobileMenu__element-style">
+                        <a class="mobileMenu__link mobileMenu__link-style" href="">Галерея</a></li>
+                </ul>                
+            </div>
+        </nav>
+
+    </header>
+
+    <nav class="subMenu subMenu-style">
+        <ul class="subMenu__elements subMenu__elements-style">
+            <li class="subMenu__element subMenu__element-style">
+                <a href="/products" class="subMenu__link subMenu__link-style">Продукция</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</b></a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</b></a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</b></a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</b></a>
+                </div>
+            </li>
+            <li class="subMenu__element subMenu__element-style">
+                <a href="" class="subMenu__link subMenu__link-style">Конструкция</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</a>
+                </div>
+            </li>
+            <li class="subMenu__element subMenu__element-style">
+                <a href="" class="subMenu__link subMenu__link-style">Производство</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</a>
+                </div>
+            </li>
+            <li class="subMenu__element subMenu__element-style">
+                <a href="" class="subMenu__link subMenu__link-style">Доставка</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</a>
+                </div>
+            </li>
+            <li class="subMenu__element subMenu__element-style">
+                <a href="" class="subMenu__link subMenu__link-style">Монтаж</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</a>
+                </div>
+            </li>
+            <li class="subMenu__element subMenu__element-style">
+                <a href="" class="subMenu__link subMenu__link-style">Галерея</a>
+                <div class="subMenu__item subMenu__item-style">
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/1.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для стандартного фасада</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/2.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Экран для кондиционера</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/3.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Панель декоративная</a>
+                    <a href="" class="subMenu__itemLink subMenu__itemLink-style"><img loading="lazy" src="{% static "img/korziny/4.png" %}" alt=""
+                            class="subMenu__itemImg subMenu__itemImg-style">Корзина для вентилируемого фасада</a>
+                </div>
+            </li>
+        </ul>
+        <button class="btn-black btnCall-style subMenu__btnCall" data-micromodal-trigger="modal-3"><i class="fas fa-mobile-alt"></i>
+            <div class="btnCall__desc">Заказать звонок</div>
+        </button>
+        <button class="btn-black btnCall-style subMenu__btnCall"><i class="fab fa-whatsapp"></i>
+            <div class="btnCall__desc">Написать в WhatsApp</div>
+        </button>
+        <a href="" class="subMenu__tel subMenu__tel-style">8(800)700-93-77</a>
+        <div class="subMenu__workhours subMenu__workhours-style">
+            <span class="subMenu__workhoursString subMenu__workhoursString-style">Консультация и продажа:</span>
+            <a href="" class="subMenu__tel2 subMenu__tel-style">8(800)700-93-77</a>
+            <span class="subMenu__workhoursString subMenu__workhoursString-style2">Звонок бесплатный</span>
+            <span class="subMenu__workhoursString subMenu__workhoursString-style">Время работы:</span>
+            <span class="subMenu__workhoursString subMenu__workhoursString-style2">По будням <b>8:00-17:00</b><br> по
+                московскому времени</span>
+        </div>
+    </nav>    

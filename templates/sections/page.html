@@ -1,0 +1,17 @@
+{% extends "base/base.html" %}
+{% load staticfiles %}
+
+{% block title%}{{ object.title }}{% endblock %}
+
+{% block content %}
+
+<div class="page__head">
+<img src={{ object.image.url }} alt="{{ object.h1 }}" class="page__image">
+<h1 class="page__title">{{ object.h1 }}</h1>
+</div>
+
+<div class="page__content">
+{{ object.content | safe }}
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% load staticfiles %}
+    <div class="modal micromodal-slide" id={{ modal_id }} aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                    {% if type == "image" %}
+                        <img class="modal__overlayImage" src="{% static image %}" alt="">
+                    {% elif type == "form" %}
+                        {% include "base/form.html" with block="modal"%}
+                    {% endif %}
+            </div>
+        </div>
+    </div>
